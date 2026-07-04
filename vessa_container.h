@@ -39,7 +39,7 @@ namespace gx_vessa
 
 		void Zero_memory() const
 		{
-			CustomVec.empty();
+			CustomVec.clear();
 		}
 
 			
