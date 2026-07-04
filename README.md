@@ -14,7 +14,8 @@ How to use
 	gx_vessa::Unorder_map<int, std::string> gx_m;
 	gx_m.insert(1, "Hello, world");
 	gx_m.insert(2, "Want to");
-	// Normal way
+	
+	// Normal way gx_m.get_value() return a ref to a value
 	gx_m.get_value(1) = "World";
 
 	// Easier way
@@ -26,7 +27,10 @@ How to use
 	});
 
 	std::cout << "--------------- iota test ------------------" << std::endl;
+	
 	// Print index 0-9
+
+	just like a for loop for (int i = 0; i < 10; i++) {} this is the same
 	gx_vessa::iota::ranges(10, [&](const int index) {
 		std::cout << index << std::endl;
 	});
